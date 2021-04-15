@@ -1,0 +1,443 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    color: #666;
+    font: 75% 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+  }
+
+.topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .accountIcon {
+    width: 20px;
+  }
+
+  .cartIcon {
+    width: 20px;
+  }
+
+  .logo {
+    display: block;
+    margin: 5% auto;
+    display: block;
+    width: 20%;
+    height: auto;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0px;
+  }
+
+  nav a:link,
+  nav a:visited {
+    background-color: white;
+    border: 2px;
+    margin-top: 10%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    font-weight: bold;
+  }
+
+  nav a:hover {
+    background-color: lightgray;
+  }
+
+  .intro {
+    margin: 10px auto;
+    width: 100%;
+    height: auto;
+}
+
+  article {
+    display: block;
+    margin: 10px auto;
+
+  }
+
+  h1 {
+    color: #111;
+    font: 3em 'Roboto', 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+  }
+
+  .about {
+    display: block;
+    margin: 5% auto;
+    font: 1.5em 'Roboto', 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+    letter-spacing: 0.1em;
+  }
+
+  .list {
+    font: 1.5em 'Roboto', 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+    line-height: 2em;
+  }
+
+  table {
+    display: block;
+    margin: auto 10%;
+    font: 1.5em 'Roboto', 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+    line-height: 2em;
+    border-collapse: collapse;
+    width: 80%;
+  }
+  
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  hr {
+    color: gray;
+    margin: 10% auto;
+
+  }
+
+  .glassesModel {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: auto;
+ }
+
+  .productDetail {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 5% auto;
+ }
+
+ .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-bottom: 3%;
+  }
+  
+  .column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+  }
+  
+  .column img:hover {
+    opacity: 1;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .color {
+      text-align: center;
+      font-size: 16px;
+  }
+
+  .price {
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .btn_cart {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    background-color: #EA6159;
+  }
+
+  .btn_buy {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+    background-color: #EA6159;
+  }
+
+
+  h2 {
+    color: #111;
+    font: 900 1.75em 'Roboto', 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  h2::after {
+    content: "";
+    display: block;
+    width: 2em;
+    height: 0.25em;
+    background: #EA6159;
+    margin-top: 0.5em;
+  }
+
+  .review-photo img{
+    width:100%;
+    display:block;
+  }
+  p{
+    margin:0;
+  }
+  .fa.fa-star{
+    color:#FEC902;
+  }
+  label{
+    width:15%;
+    margin:10px 1% 0 0;
+    display:block;
+    float: left;
+    font-size: 15px;
+  }
+  input[type="text"]{
+    width:84%;
+    margin:10px 0;
+    height:40px;
+    border:none;
+    background:#F6F6F6;
+    padding:1em;
+  }
+  textarea{
+    width:84%;
+    border:none;
+    background:#F6F6F6;
+    margin:10px 0;
+    height:100px;
+    padding:1em;
+  }
+
+  button{
+    width:20%;
+    height:40px;
+    border:none;
+    background:#EA6159;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color:white;
+    display: block;
+    margin: 5% auto;
+  }
+  .review{
+    width:100%;
+    display:inline-block;
+    margin-top:10px;
+    margin-bottom: 10px;
+    margin-bottom: 5%;
+  }
+  .review-photo{
+    height:80px;
+    width:80px;
+    display: block;
+    float:left;
+    margin-right:3em;
+  }
+  .review-box{
+    float:left;
+    display: block;
+    width:87.5%;
+    background:#F6F6F6;
+    padding:1.5em;
+    position: relative;
+  }
+  .review-box:after, .review-box:before {
+      right: 100%;
+      top: 10%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+  }
+  .review-box:after {
+      border-right-color: #F6F6F6;
+      border-width: 25px;
+  }
+  .review-comment{
+    color:#9A9999;
+  }
+  .review-date{
+    color:#C7C7C7;
+  }
+  .review-author{
+    color:#C7C7C7;
+  }
+  .review-author strong{
+    color:black;
+  }
+  .comments {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    margin: auto;
+    padding: 27px;
+    box-sizing: border-box;
+    top: 5%;
+  }
+  
+  .comments::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+  
+  .comments__form-info,
+  .comments__form-text {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .comments__form-info { float: left; }
+  .comments__form-text { float: right; }
+  
+  .comments__form-field {
+    position: relative;
+  }
+  .comments__form-label {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font: 700 1.125em 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+    cursor: text;
+    pointer-events: none;
+  }
+  
+  .comments__form-label-text {
+    display: block;
+    transform: translateY(100%);
+    opacity: 0;
+    transition-duration: 0.5s;
+    transition-property: transform, opacity;
+  }
+  .comments__form-input:focus::-webkit-input-placeholder {
+     color: transparent;
+  }
+  .comments__form-input:focus + .comments__form-label .comments__form-label-text {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .comments__form-label::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #111;
+    bottom: 1em;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.5s;
+  }
+  
+  .comments__form-input:focus + .comments__form-label::after {
+    transform: scaleX(1);
+  }
+  
+  .comments__form-input {
+    position: relative;
+    width: 100%;
+    padding: 1em 0;
+    border: 0;
+    outline: 0;
+    margin: 1em 0;
+    border-bottom: 3px solid #ddd;
+    vertical-align: bottom;
+    font: 400 1.125em 'Open Sans', 'Helvetica Neue', 'Arial', 'sans-serif';
+  }
+  
+  .comments__form-textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 168px;
+  }
+
+  .comments__form-submit:hover {
+    opacity: 1;
+  }
+
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(241, 240, 240);
+  }
+
+  .column_footer {
+    display: inline;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row_footer::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .footer_logo {
+      width: 10px;
+  }
+  
+  @media only screen and (min-width: 1020px) {
+  
+    .comments { width: 970px; padding: 52px; }
+  
+    .comments__form-info,
+    .comments__form-text { width: 407px; }
+  
+  }
+  
+  
+  @media screen and (min-width: 40em) {
+    nav ul {
+      display: flex;
+    }
+    nav li {
+      flex: 1;
+    }
+  }
+  @media screen and (min-width: 70em) {
+    footer {
+      border-top: 1px solid #ccc;
+      margin-top: 2em;
+    }
+  }
+

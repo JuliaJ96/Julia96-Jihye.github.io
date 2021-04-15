@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>MOMENT</title>
+        <meta name="author" content="Jihye Jeon">
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="refresh" content="0; url=https://github.com/JuliaJ96/Julia96-Jihye.github.io.git">
+        <link href="./sources/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./sources/js/script.js"></script>
+    </head>
+
+    <body>
+        <div class="topnav">
+            <a href="./myaccount.html"><img class="accountIcon" src="./sources/images/account.png" alt="myAccount"></a>
+            <a href="./mycart.html"><img class="cartIcon" src="./sources/images/shopping-bag.png" alt="myAccount"></a>
+        </div>
+
+        <img class="logo" src="./sources/images/logo.png" alt="Moment Logo">
+
+        <div class="wrapper">
+            <header>
+                <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#product">Product</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                </nav>
+            </header>
+        </div>
+
+        <video class="intro" src="./sources/videos/intro.mp4" autoplay loop muted></video>
+
+        <main>
+        <article>
+            <div>
+                <h1 id="about">About</h1>
+                <p class="about"> Moment is a wearable device that can be worn on the face as a device that simultaneously provides both the original function of glasses to see objects in front and the function of a computer. Moment can solve the inconvenience that consumers have to use smart devices with their hands by using the strength of hands-free.
+                </p>
+
+                <h2>Moment:</h2>
+                <ul class="list">
+                    <li>It is designed with built-in camera to solve the inconvenience of consumers' needs. It is for those of who want to enjoy the scene with their eyes and keep them as photos or videos at the same time. In addition, pupil recognition function captures the moment of user's perspective as a photo or video.</li>
+                    <li>It can be commanded by voice and gesture recognition, and the application has photo and video editing capabilities. Therefor, users don't need to download any other photo/video edittor additionally.</li>
+
+                    <li>It with AR function can re-experience the scenes that users have experienced using the photos or videos they have taken. Or they can enjoy their own design with AR function. In addition, it is possible to change the color of the glasses through the application.</li>
+
+                    <li>It supports wireless communication technologies such as Bluetooth and Wi-Fi, and can search and share information in real time through an Internet connection. In addition, user can check the time, phone calls, text messages, maps, and navigation that they need to check on their smartphone with voice commands through your glasses.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tableContent">
+                <h2>Features:</h2>
+                <table>
+                    <tr>
+                        <td><strong>COMFORT</strong></td>
+                        <td>Provide a sense of weight and a natural fit that  is not conscious of wearing, such as clothes and accessories used in everyday life.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>REACT ABILITY</strong></td>
+                        <td>Application support that can support continuous communication between a computer and a user to provide an immediate response to user requests.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>INTERFACE</strong> </td>
+                        <td>Provides users with a natural sense of unity and integration to expand human physical and intellectual abilities.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>STABILITY</strong></td>
+                        <td>Minimize discomfort and physical fatigue caused by long-term wear, and ensure stability against power and electromagnetic waves.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>SOCIALITY</strong></td>
+                        <td>Possible to protect the privacy of individuals and forms that conform to sociocultural conventional wisdom, excluding cultural disparity caused by wearing.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <div>
+                <h1 id="product">Products</h1>
+                <h2>Detail</h2>
+                <div class="productImg">
+                <img class="glassesModel" src="./sources/images/glassesModel.jpg" alt="product Img">
+                
+                <img class="productDetail" src="./sources/images/productDetail.jpg" alt="Prodect Detail">
+            </div>
+
+            <h2>Models</h2>
+
+            <div style="text-align:center">
+                <p>Click on the images below:</p>
+            </div>
+                
+            <div class="row">
+                <div class="column">
+                    <img src="./sources/images/black_glasses.jpg" alt="Black" style="width:100%" onclick="myFunction(this);">
+                    <p class="color">Black</p>
+                    <p class="price">$300.00</p>
+                </div>
+
+                <div class="column">
+                    <img src="./sources/images/navy_glasses.jpg" alt="Navy" style="width:100%" onclick="myFunction(this);">
+                    <p class="color">Navy</p>
+                    <p class="price">$300.00</p>
+                </div>
+
+                <div class="column">
+                    <img src="./sources/images/gray_glasses.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+                    <p class="color">Gray Floral</p>
+                    <p class="price">$300.00</p>
+                </div>
+
+                <div class="column">
+                    <img src="./sources/images/white_glasses.jpg" alt="White" style="width:100%" onclick="myFunction(this);">
+                    <p class="color">White</p>
+                    <p class="price">$300.00</p>
+                </div>
+
+                <div class="container">
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    <img id="expandedImg" style="width:100%">
+                    <div id="imgtext"></div>
+                </div>
+            </div>
+
+            <button class="btn_cart">add cart</button>
+            <a href="./payment.html"><button class="btn_buy">buy now</button></a>
+
+            <hr>
+
+            <h1 id="reviews">Reviews</h1>
+
+            <h2>Write your review</h2>
+
+            <div id="app">
+                <label>Your Name:</label>
+                <input name="name" type="text" v-model="name"><br>
+                <label>Your e-mail:</label>
+                <input name="email" type="text" v-model="city"><br>
+                <label>Your Review:</label>
+                <textarea name="content" v-model="content"></textarea>
+                
+                <button v-on:click="addReview()">Submit</button>
+        
+            <div v-for="item in list" class="review">
+
+                <div class="review-photo">
+                    <img src="./sources/images/account.png">
+                </div>
+            
+                <div class="review-box">
+                
+                    <div class="review-author">
+                        <p><strong>John Doe</strong> - <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        - john.doe@gmail.com</p>
+                    </div>
+                    <div class="review-comment">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolore iusto aspernatur pariatur eligendi, nesciunt neque quibusdam perspiciatis, molestias alias at? Quas voluptates iure labore vero quam dolorem quasi exercitationem?</p>
+                    </div>
+                    
+                    <div class="review-date">
+                        <time>April, 13th, 2021</time>
+                    </div>
+                </div>
+
+            <div v-for="item in list" class="review">
+
+                <div class="review-photo">
+                    <img src="./sources/images/account_2.png">
+                </div>
+            
+                <div class="review-box">
+                
+                    <div class="review-author">
+                        <p><strong>John Doe</strong> - <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        - john.doe@gmail.com</p>
+                    </div>
+                    <div class="review-comment">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolore iusto aspernatur pariatur eligendi, nesciunt neque quibusdam perspiciatis, molestias alias at? Quas voluptates iure labore vero quam dolorem quasi exercitationem?</p>
+                    </div>
+                    
+                    <div class="review-date">
+                        <time>April, 13th, 2021</time>
+                    </div>
+                </div>
+
+                <div v-for="item in list" class="review">
+
+                    <div class="review-photo">
+                        <img src="./sources/images/account.png">
+                    </div>
+                
+                    <div class="review-box">
+                    
+                        <div class="review-author">
+                            <p><strong>John Doe</strong> - <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            - john.doe@gmail.com</p>
+                        </div>
+                        <div class="review-comment">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas dolore iusto aspernatur pariatur eligendi, nesciunt neque quibusdam perspiciatis, molestias alias at? Quas voluptates iure labore vero quam dolorem quasi exercitationem?</p>
+                        </div>
+                        
+                        <div class="review-date">
+                            <time>April, 13th, 2021</time>
+                        </div>
+                    </div>
+
+            <hr>
+
+            <h1 id="contact">Contact</h1>
+            <h2>Contact Us</h2>
+            <div class="comments">
+                 <form class="comments__form">
+                <div class="comments__form-info">
+                    <div class="comments__form-field">
+                    <input id="comments__form-label-name" name="author" placeholder="Name" type="text" class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-name">
+                        <span class="comments__form-label-text">Name</span>
+                        </label>
+                    </div>
+                
+                    <div class="comments__form-field">
+                    <input id="comments__form-label-mail" name="author" placeholder="E-mail" type="text" class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-mail">
+                        <span class="comments__form-label-text">E-mail</span>
+                    </label>
+                    </div>
+                
+                    <div class="comments__form-field">
+                    <input id="comments__form-label-site" name="author" placeholder="Phone Number" type="text" class="comments__form-input">
+                    <label class="comments__form-label" for="comments__form-label-site">
+                        <span class="comments__form-label-text">Phone Number</span>
+                    </label>
+                    </div>
+                </div>
+                
+                <div class="comments__form-text">
+                        
+                    <div class="comments__form-field">
+                    <textarea id="comments__form-label-text" name="author" placeholder="Additional Details" type="text" class="comments__form-input comments__form-textarea"></textarea>
+                    <label class="comments__form-label" for="comments__form-label-text">
+                        <span class="comments__form-label-text">Additional Details</span>
+                    </label>
+                    </div>
+                
+                </div>
+                <div>
+                    <button v-on:click="addReview()">Submit</button>
+                </div>   
+                    
+        </article>
+      </main>
+
+         <footer>
+            <div class="row_footer">
+                <div class="column_footer">
+                    <img src="./sources/images/facebook.png" alt="facebook" style="width: 2.5%">
+                </div>
+                <div class="column_footer">
+                    <img src="./sources/images/instagram.png" alt="instagram"style="width: 2.5%">
+                </div>
+                <div class="column_footer">
+                    <img src="./sources/images/twitter.png" alt="twitter"style="width: 2.5%">
+                </div>
+                <div class="column_footer">
+                    <img src="./sources/images/youtube.png" alt="youtube"style="width: 2.5%">
+                </div>
+                <div class="column_footer">
+                    <img src="./sources/images/linkedin.png" alt="linkedin"style="width: 2.5%">
+                </div>
+              </div>
+        </footer>
+        
+    </body>
+</html>

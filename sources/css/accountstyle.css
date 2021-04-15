@@ -1,0 +1,80 @@
+.logo {
+    display: block;
+    margin: 5% auto;
+    display: block;
+    width: 20%;
+    height: auto;
+}
+
+
+.new_client {
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+    text-transform: uppercase;
+}
+
+.have_already {
+	font-family: 'Roboto', sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	letter-spacing: 2.5px;
+    text-transform: uppercase;
+
+}
+
+.create {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.form-group {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14px;
+
+}
+
+
+.btn1 {
+    background-color: black;
+    color: white;
+    border:none;
+    margin-left: 345px;
+    margin-top: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+
+}
+
+.btn2 {
+    background-color: black;
+    color: white;
+    border:none;
+    margin-left: 345px;
+    margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+a {
+    color: grey;
+    text-decoration: underline;
+
+}
+
+::placeholder {
+  color: grey;
+  font-size: 15px;
+}

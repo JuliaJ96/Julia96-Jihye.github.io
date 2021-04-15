@@ -1,0 +1,88 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+    padding: 8px;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .accountIcon {
+    width: 20px;
+  }
+
+  .cartIcon {
+    width: 20px;
+  }
+
+  .logo {
+    display: block;
+    margin: 5% auto;
+    display: block;
+    width: 15%;
+    height: auto;
+  }
+  
+  .col-25 {
+    -ms-flex: 25%;
+    flex: 25%;
+    padding: 0 60px;
+  }
+  .container {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    margin-bottom: 5%;
+  }
+
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .btn {
+    background-color: #EA6159;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+  }
+  
+  .btn:hover {
+    background-color: black;
+  }
+  
+
+  @media (max-width: 800px) {
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
